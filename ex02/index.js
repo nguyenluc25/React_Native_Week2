@@ -3,10 +3,9 @@ const data2 = [16, 6, 10, 5, 6, 1, 4];
 
 const calcAverageHumanAge = (arr) => {
     arr = arr.map((age) => (age <= 2) ? 2 * age : (16 + age * 4))
-    console.log(arr);
     arr = arr.filter((age) => age >= 18);
 
-    const sum = arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0, );
+    const sum = arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0,);
 
     return sum / arr.length;
 }
